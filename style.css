@@ -1,0 +1,82 @@
+      /* Estilos CSS para a página */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      /* Barra de navegação */
+      .barradenav {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 90%;
+      }
+
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+      }
+      #Logo{
+        float: left;
+        padding-left: 20px;
+      }
+
+      .barradenav a {
+        margin-top: 15px;
+        float: left;
+        display: block;
+        color: #ad8383;
+        text-align: center;
+        padding: 50px;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+      .barradenav a:hover {
+        background-color: #380707;
+        opacity: 75%;
+        color: rgb(255, 255, 255);
+      }
+
+      /* Plano de fundo da página inicial */
+      .homepage {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        z-index: 1;
+      }
+ 
+      .homepage h1 {
+        font-size: 4em;
+        margin: 0;
+        color: #ffffff;
+        text-shadow: 1px 1px #000000;
+      }
+      .homepage p {
+        font-size: 1.5em;
+        margin: 0;
+        text-shadow: 1px 1px #000000;
+      }
+
+      .Rodape{
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+      }
+
+      iframe { 
+        padding: 15px;
+        border-radius: 30px;
+      }
