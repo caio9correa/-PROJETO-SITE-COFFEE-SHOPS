@@ -5,7 +5,6 @@
  <img align="center" alt="Caio-CSS" height="45" widht="55" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
  </div><br>
 <div align="center">
-<img src="https://user-images.githubusercontent.com/74628750/196557270-b2dfdf30-a15c-4fc7-8731-ce1c9f1bc436.png" width="700px" target="_blank"/>
 </div>
 <br>
 
