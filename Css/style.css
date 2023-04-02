@@ -180,35 +180,49 @@ textarea {
   margin-top: 50px;
 }
 
-.info-contatos, .contact-form {
-  width: 400px;
-  margin: 20px;
+
+.info-contatos, .formulario-contatos {
+  width: 450px;
+  margin: 25px;
   padding: 20px;
+  border-radius: 20px;
   box-shadow: 0px 0px 5px #999;
+  background-color: #000000;
+  opacity: 95%;
 }
 
-.contact-info h2, .contact-form h2 {
+.info-contatos h2, .formulario-contatos h2 {
   margin-top: 0;
+  text-align: center;
 }
 
-.contact-form label {
+.info-contatos p {
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+}
+
+.formulario-contatos label {
   display: block;
   margin-bottom: 5px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
 }
 
-.contact-form input, .contact-form textarea {
+.formulario-contatos input, .formulario-contatos textarea {
   width: 100%;
-  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
-.contact-form button {
-  background-color: #333;
-  color: #fff;
+.formulario-contatos button {
+  background-color: #2b2828;
+  color: #ffffff;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 150px;
 }
