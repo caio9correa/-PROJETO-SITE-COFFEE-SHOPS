@@ -169,3 +169,46 @@ textarea {
   height: 200px;
   resize: none;
 }
+
+
+/* Estilos dos contatos e do formulário */
+.contatos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.info-contatos, .contact-form {
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+.contact-info h2, .contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
