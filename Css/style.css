@@ -1,7 +1,7 @@
 /* Configurações das tags gerais do site */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 { 
@@ -14,6 +14,7 @@ h2{
   color: #ad8383;
   font-size: 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 p {
@@ -21,6 +22,10 @@ p {
   padding: 15px;
   width: 80%;
   color: #ad8383;
+}
+@font-face {
+  font-family: "Rale";
+  src: url(../Fontes/Raleway/Raleway-Italic-VariableFont_wght.ttf);
 }
 
 /* Configurações do video como Background */
@@ -41,12 +46,13 @@ video {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  opacity: 90%;
+  background-color: #f8f8f8;
+  opacity: 80%;
 }
 
 .barradenav a {
   margin-top: 15px;
+  margin-left: 15px;
   float: left;
   display: block;
   color: #ad8383;
@@ -54,12 +60,14 @@ video {
   padding: 50px;
   border-radius: 25px;
   text-decoration: none;
+  font-family: "Rale"
 }
 
 .barradenav a:hover {
-  background-color: #380707;
   opacity: 75%;
-  color: rgb(255, 255, 255);
+  color: rgb(56, 21, 21);
+  transform: scale(1.15);
+  border-bottom: solid rgb(58, 16, 16);
 }
 
 /* Configurações da Logo */
@@ -85,6 +93,7 @@ video {
   margin: 0;
   color: #ffffff;
   text-shadow: 1px 1px #000000;
+  font-family: "Rale";
 }
 
 .homepage p {
@@ -94,31 +103,6 @@ video {
 }
 
 /* Configurações do Rodapé e Mapa*/
-footer {
-  width: 100%;
-  text-align: center;
-  background-color: #000000;
-  opacity: 75%;
-  color: #fff;
-  padding: 10px 0;
-}
-
-footer ul li {
-  width: 100%;
-  height: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  color: #805b5b;
-  list-style-type: none;
-}
-
-.Rodape{
-  width: 100%;
-  height: 350px;
-  background-color: #000000;
-}
 
 .mapa {
   padding: 15px 50px;
@@ -145,22 +129,23 @@ footer ul li {
   box-shadow: 0px 0px 5px #999;
 }
 
+.box-produto:hover {
+  transform: scale(1.15);
+}
+
 .box-produto img {
   width: 200px;
   height: 200px;
 }
 
-.box-produto p {
-  text-align: center;
-  width: 100%;
-}
-
 .box-produto h2 {
   text-align: center;
   color:#fff;
+  font-family: "Rale";
 }
 
 textarea {
+  font-size: "Kalam2";
   background-color: #000000;
   color: #805b5b;
   text-align: center;
@@ -194,6 +179,7 @@ textarea {
 .info-contatos h2, .formulario-contatos h2 {
   margin-top: 0;
   text-align: center;
+  color: white;
 }
 
 .info-contatos p {
@@ -205,7 +191,7 @@ textarea {
 .formulario-contatos label {
   display: block;
   margin-bottom: 5px;
-  color: white;
+  color: #c9c1c1;
   text-align: center;
   padding-top: 5px;
 }
@@ -225,4 +211,112 @@ textarea {
   border-radius: 5px;
   cursor: pointer;
   width: 150px;
+  margin-left: 150px;
+}
+
+/* configurações da página inicial*/
+
+.apresentacao {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apresentacao h2 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+/* Estilos da seção de produtos */
+.produtos {
+  background-color: #ffffff;
+  opacity: 80%;
+  padding: 20px;
+}
+.produto {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produto img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+.produto h3 {
+  margin: 0;
+  font-size: 24px;
+}
+/* Estilos dos depoimentos */
+.depoimentos {
+  background-image: url(../Imagens/caffeine-g60543121c_1280.jpg);
+  background-color: #4d2020;
+  padding: 20px;
+  text-align: center;
+}
+.depoimento {
+  margin-bottom: 20px;
+}
+.depoimento p {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+}
+.depoimento span {
+  font-weight: bold;
+}
+
+/* Estilos da seção de Galeria */
+.galeria {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 35px;
+}
+
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
+.galeria .foto {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.galeria .titulo {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .galeria .foto {
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 480px) {
+  .galeria .foto {
+    width: 100%;
+    margin: 10px;
+  }
 }

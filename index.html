@@ -1,49 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+
+    <title>Café Delícia - Produtos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shops da Tia Rosa</title>
+    <link rel="shortcut icon" href="Imagens/Logo1.png"image/x-icon">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/normalize.css">
-    <link rel="shortcut icon" href="Imagens/Logo1.png"image/x-icon">
+    <div id="video">
+      <video autoplay loop muted>
+              <source src="Video/Backgound 5.mp4">
+      </video>
+    </div>
+
 </head>
+
 <body>
 
-<!-- Video de fundo -->
-<div id="video">
-    <video autoplay loop muted>
-            <source src="Video/Backgound 5.mp4">
-    </video>
-</div>
+  <header>
+    <div class="barradenav">
 
-<!-- Barra de navegação -->
-<div class="barradenav">
-    <div id="Logo">
-        <img src="Imagens/Logo1.png"">
+      <div id="Logo">
+        <img src="Imagens/Logo1.png">
+      </div>
+
+      <a href="index.html"><strong>HOME</strong></a>
+      <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
+      <a href="produtos.html"><strong>PRODUTOS</strong></a>
+      <a href="contatos.html"><strong>CONTATOS</strong></a>
+
     </div>
-    <a href="index.html"><strong>HOME</strong></a>
-    <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
-    <a href="produtos.html"><strong>PRODUTOS</strong></a>
-    <a href="contatos.html"><strong>CONTATOS</strong></a>
-</div>
+  </header>
+  <main>
+    <section class="apresentacao">
+      <h2>Bem-vindos ao Coffe Shops da Tia rosa</h2>
+      <img src="Imagens/Linha-Horizontal.png" alt="Linha-Horizontal">
+      <p>Somos uma loja apaixonada por café e estamos aqui para compartilhar com você a nossa paixão. Nós selecionamos os melhores grãos de café de todo o mundo para oferecer a você uma experiência única de sabor e aroma.<br> Aqui você encontrará uma ampla variedade de cafés, desde os mais clássicos até os mais exóticos. Todos são cuidadosamente torrados e preparados para garantir a máxima qualidade e sabor.</p>
+    </section>
 
-<!-- Conteúdo da Página inicial -->
-<div class="homepage">
-    <h1>Bem-Vindo ao Coffee Shops da Tia Rosa</h1>
-    <br>
-    <img src="Imagens/Linha-Horizontal.png" alt="">
-    <p class="sobre-nos">O melhor café para começar o seu dia</p>
-</div>
+<!-- Seção Galeria -->
+    <section class="galeria">
+      <h2>Conheça nosso local</h2>
+      <div class="foto">
+        <img src="Imagens/Loja1.jpg" alt="Foto da loja de café">
+        <div class="titulo">Loja de Café</div>
+      </div>
+      <div class="foto">
+        <img src="Imagens/Loja2.jpg" alt="Foto do interior da loja">
+        <div class="titulo">Interior da loja</div>
+      </div>
+      <div class="foto">
+        <img src="Imagens/Loja3.jpg" alt="Foto de um café na loja">
+        <div class="titulo">Café da loja</div>
+      </div>
+      <div class="foto">
+        <img src="Imagens/Loja4.jpg" alt="Foto dos funcionários da loja">
+        <div class="titulo">Funcionários da loja</div>
+      </div>
+      <h2>Saiba mais</h2>
+    </section>
 
-<!-- Rodapé -->
-<footer>
-    <h3>Faça-nos uma visita</h3>
-    <ul>
-      <li><strong>Endereço:</strong> Rua dos Cafés, 123, Sobradinho - DF</li>
-      <li><strong>Telefone</strong> (61) 4002-8922 </li>
-      <li><strong>contato@coffeshopstiarosa.com</strong></li>
-    </ul>
+    <!-- Seção de produtos -->
+    <section class="produtos">
+      <div class="produto">
+        <img src="Imagens/Café Cappuccino.png" alt="Cappuccino">
+        <h3>Café Especial</h3>
+        <p>Nós selecionamos cuidadosamente os melhores grãos de café de todo o mundo para oferecer a você uma experiência de café única e saborosa. Experimente nossos blends exclusivos e sabores sazonais</p>
+      </div>
+
+    <div class="produto">
+      <img src="https://cdn.pixabay.com/photo/2015/11/16/08/21/coffee-1047892_1280.jpg" alt="Café moído">
+      <h3>Café Moído</h3>
+      <p>Para aqueles que gostam de preparar seu próprio café em casa, oferecemos uma variedade de cafés moídos frescos, prontos para serem preparados em sua cafeteira favorita.</p>
+    </div>
+    <div class="produto">
+      <img src="https://cdn.pixabay.com/photo/2015/10/12/15/18/coffee-beans-984328_1280.jpg" alt="Grãos de café">
+      <h3>Grãos de Café</h3>
+      <p>Se você é um amante de café ávido e gosta de preparar seu café do zero, temos uma variedade de grãos de café de qualidade, de diversas regiões produtoras de todo o mundo.</p>
+    </div>
+  </section>
+  
+  <!-- Seção de depoimentos -->
+  <section class="depoimentos">
+    <h2>O que nossos clientes dizem sobre nós</h2>
+    <div class="depoimento">
+      <p>"Eu amo o café da Loja de Café! É sempre fresco e saboroso, e o atendimento ao cliente é excelente. Recomendo para todos os amantes de café."</p>
+      <span> - João Silva</span>
+    </div>
+    <div class="depoimento">
+      <p>"Eu nunca fui um grande fã de café, mas depois de experimentar os cafés especiais da Loja de Café, me tornei um convertido. Agora eu não passo um dia sem meu café da manhã."</p>
+      <span> - Maria Souza</span>
+    </div>
+  </section>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>Loja de Café &copy; 2023</p>
   </footer>
-  </body>
+  
+
+
+  </main>
+</body>
 </html>
