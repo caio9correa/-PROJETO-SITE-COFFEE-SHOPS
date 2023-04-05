@@ -46,8 +46,8 @@ video {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-color: #f8f8f8;
-  opacity: 80%;
+  background-color: #ffffff;
+  opacity: 90%;
 }
 
 .barradenav a {
@@ -110,38 +110,66 @@ video {
 }
 
 /* Configurações da área de produtos */
-.container-produto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.box-produto {
-  border-radius: 40px;
-  width: 300px;
-  height: 500px;
-  background-color: #000000;
-  margin: 20px;
+.container {
+  width: 100%;
+  margin: 0 auto;
   padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   text-align: center;
-  box-shadow: 0px 0px 5px #999;
 }
 
-.box-produto:hover {
-  transform: scale(1.15);
+.container h1 {
+  color: #fff;
 }
 
-.box-produto img {
-  width: 200px;
-  height: 200px;
-}
-
-.box-produto h2 {
+.product {
+  display: inline-block;
+  margin: 20px;
+  background-color: #4d3737;
+  border: 1px solid #3b2929;
+  border-radius: 20px;
+  padding: 10px;
   text-align: center;
-  color:#fff;
-  font-family: "Rale";
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  padding-left: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.product p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.product button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product button:hover {
+  background-color: #3b2929;
+  color: #fff;
 }
 
 textarea {
@@ -246,20 +274,35 @@ textarea {
 }
 .produto img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   margin-bottom: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
+
+.produto a:hover {
+  text-transform: scale(1.13);
+}
+
+.produtos h1 {
+  text-align: center;
+}
+
 .produto h3 {
   margin: 0;
   font-size: 24px;
 }
 /* Estilos dos depoimentos */
 .depoimentos {
-  background-image: url(../Imagens/caffeine-g60543121c_1280.jpg);
-  background-color: #4d2020;
   padding: 20px;
   text-align: center;
 }
+
+.depoimentos h2 {
+  color: #fff;
+  font-size: 2em;
+}
+
 .depoimento {
   margin-bottom: 20px;
 }
@@ -267,9 +310,11 @@ textarea {
   font-size: 18px;
   font-style: italic;
   margin: 0;
+  width: 100%;
 }
 .depoimento span {
   font-weight: bold;
+  color: #fff;
 }
 
 /* Estilos da seção de Galeria */
@@ -291,9 +336,11 @@ textarea {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
+
 .galeria img:hover {
   transform: scale(1.05);
 }
+
 .galeria .foto {
   width: 300px;
   height: 300px;
@@ -308,6 +355,13 @@ textarea {
   font-weight: bold;
   color: #333;
 }
+
+.galeria h2 a {
+  text-decoration: none;
+  color: #2b2828;
+}
+
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .galeria .foto {
@@ -320,3 +374,36 @@ textarea {
     margin: 10px;
   }
 }
+
+/* Estilos do Footer */
+		/* Estilos para o footer */
+    footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 0;
+    }
+    
+    .footer-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .footer-info img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    
+    @media (max-width: 767px) {
+      .footer-info {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .footer-info img {
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+    }
+    
