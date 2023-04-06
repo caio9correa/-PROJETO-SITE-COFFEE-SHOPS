@@ -2,12 +2,21 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
-
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* altura do footer */
+}
+main {
+    min-height: 100%;
+}
 h1 { 
   padding-top: 20px;
 }
-
 h2{
   padding-top: 30px;
   margin-left: 15px;
@@ -16,17 +25,20 @@ h2{
   text-decoration: none;
   text-align: center;
 }
-
 p {
   text-align: center;
   padding: 15px;
   width: 80%;
   color: #ad8383;
 }
+
+
+/* Fontes do google Fonts */
 @font-face {
   font-family: "Rale";
   src: url(../Fontes/Raleway/Raleway-Italic-VariableFont_wght.ttf);
 }
+
 
 /* Configurações do video como Background */
 video {
@@ -41,6 +53,7 @@ video {
   z-index: -10;
 }
 
+
 /* Configurações da Barra de navegação */
 .barradenav {
   overflow: hidden;
@@ -49,7 +62,6 @@ video {
   background-color: #ffffff;
   opacity: 90%;
 }
-
 .barradenav a {
   margin-top: 15px;
   margin-left: 15px;
@@ -62,7 +74,6 @@ video {
   text-decoration: none;
   font-family: "Rale"
 }
-
 .barradenav a:hover {
   opacity: 75%;
   color: rgb(56, 21, 21);
@@ -70,14 +81,133 @@ video {
   border-bottom: solid rgb(58, 16, 16);
 }
 
+
 /* Configurações da Logo */
 #Logo{
   float: left;
   padding-left: 20px;
 }
 
-/* Configurações do conteúdo */
-.homepage {
+
+/* configurações das sessões da página inicial*/
+/* Estilos da seção de apresentação*/
+.apresentacao {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apresentacao h2 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+/* Estilos da seção de produtos */
+.produtos {
+  background-color: #ffffff;
+  opacity: 80%;
+  padding: 20px;
+}
+.produto {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produto img {
+  width: 100%;
+  margin-bottom: 10px;
+  object-fit: cover;
+} 
+.produtos h1 {
+  text-align: center;
+}
+.produto h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Estilos dos depoimentos */
+.depoimentos {
+  padding: 20px;
+  text-align: center;
+}
+.depoimentos h2 {
+  color: #fff;
+  font-size: 2em;
+}
+.depoimento {
+  margin-bottom: 20px;
+}
+.depoimento p {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding-right: 0;
+  width: 100%;
+}
+.depoimento span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Estilos da seção de Galeria */
+.galeria {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 35px;
+}
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
+.galeria .foto {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.galeria .titulo {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+.galeria h2 a {
+  text-decoration: none;
+  color: #2b2828;
+}
+@media (max-width: 768px) {
+  .galeria .foto {
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 480px) {
+  .galeria .foto {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* Configurações do conteúdo da página Sobre nós */
+.sobre {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -87,30 +217,22 @@ video {
   color: #000000;
   z-index: 1;
 }
- 
-.homepage h1 {
+.sobre h1 {
   font-size: 4em;
   margin: 0;
   color: #ffffff;
   text-shadow: 1px 1px #000000;
   font-family: "Rale";
 }
-
-.homepage p {
+.sobre p {
   font-size: 1.5em;
   margin: 0;
   text-shadow: 1px 1px #000000;
 }
 
-/* Configurações do Rodapé e Mapa*/
 
-.mapa {
-  padding: 15px 50px;
-  margin: 10px;
-}
-
-/* Configurações da área de produtos */
-.container {
+/* Configurações da página de Cardapio  */
+.cardapio {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -119,11 +241,11 @@ video {
   text-align: center;
 }
 
-.container h1 {
+.cardapio h1 {
   color: #fff;
 }
 
-.product {
+.produto {
   display: inline-block;
   margin: 20px;
   background-color: #4d3737;
@@ -135,29 +257,29 @@ video {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product:hover {
+.produto:hover {
   transform: scale(1.05);
 }
 
-.product img {
+.produto img {
   padding-left: 10px;
   max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
-.product h2 {
+.produto h2 {
   text-align: center;
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
-.product p {
+.produto p {
   text-align: center;
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.product button {
+.produto button {
   background-color: #ffffff;
   color: #000000;
   border: none;
@@ -167,20 +289,9 @@ video {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.product button:hover {
+.produto button:hover {
   background-color: #3b2929;
   color: #fff;
-}
-
-textarea {
-  font-size: "Kalam2";
-  background-color: #000000;
-  color: #805b5b;
-  text-align: center;
-  border: none;
-  width: 300px;
-  height: 200px;
-  resize: none;
 }
 
 
@@ -192,7 +303,6 @@ textarea {
   align-items: center;
   margin-top: 50px;
 }
-
 
 .info-contatos, .formulario-contatos {
   width: 450px;
@@ -242,168 +352,54 @@ textarea {
   margin-left: 150px;
 }
 
-/* configurações da página inicial*/
 
-.apresentacao {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.apresentacao h2 {
-  font-size: 3em;
-  color: #fff;
-  text-shadow: 1px 1px #000;
-}
-
-/* Estilos da seção de produtos */
-.produtos {
-  background-color: #ffffff;
-  opacity: 80%;
-  padding: 20px;
-}
-.produto {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.produto img {
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 10px;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-}
-
-.produto a:hover {
-  text-transform: scale(1.13);
-}
-
-.produtos h1 {
-  text-align: center;
-}
-
-.produto h3 {
-  margin: 0;
-  font-size: 24px;
-}
-/* Estilos dos depoimentos */
-.depoimentos {
-  padding: 20px;
-  text-align: center;
-}
-
-.depoimentos h2 {
-  color: #fff;
-  font-size: 2em;
-}
-
-.depoimento {
-  margin-bottom: 20px;
-}
-.depoimento p {
-  font-size: 18px;
-  font-style: italic;
-  margin: 0;
-  width: 100%;
-}
-.depoimento span {
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Estilos da seção de Galeria */
-.galeria {
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin-top: 35px;
-}
-
-
-.galeria img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.galeria img:hover {
-  transform: scale(1.05);
-}
-
-.galeria .foto {
-  width: 300px;
-  height: 300px;
-  margin: 20px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.galeria .titulo {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #333;
-}
-
-.galeria h2 a {
-  text-decoration: none;
-  color: #2b2828;
-}
-
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .galeria .foto {
-    width: calc(50% - 40px);
-  }
-}
-@media (max-width: 480px) {
-  .galeria .foto {
-    width: 100%;
-    margin: 10px;
-  }
-}
 
 /* Estilos do Footer */
-		/* Estilos para o footer */
-    footer {
-      background-color: #000000;
-      color: #fff;
-      padding: 10px 0;
-    }
-    
-    .footer-info {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    
-    .footer-info img {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-    }
-    
-    @media (max-width: 767px) {
-      .footer-info {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .footer-info img {
-        margin-bottom: 10px;
-        margin-right: 0;
-      }
-    }
-    
+footer {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+.contact-info h4,
+.map-container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.contact-info p {
+  margin: 0;
+}
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .contact-info,
+  .map-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
