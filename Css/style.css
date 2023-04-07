@@ -217,7 +217,6 @@ video {
 .cardapio {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-align: center;
@@ -230,7 +229,7 @@ video {
 .produto {
   display: inline-block;
   margin: 20px;
-  background-color: #4d3737;
+  background-color: #291515;
   border: 1px solid #3b2929;
   border-radius: 20px;
   padding: 10px;
@@ -250,12 +249,19 @@ video {
   border-radius: 5px;
 }
 .produto h2 {
+  color: #fff;
   text-align: center;
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+.produto h3 {
+  color: #fff;
+}
+
 .produto p {
+  width: 90%;
   text-align: center;
   font-size: 14px;
   margin-top: 5px;
@@ -335,19 +341,17 @@ video {
 }
 
 
-/* Estilo para o footer */
+/* Configurações do footer */
 footer {
   background-color: #fafafa;
   padding: 30px 0;
   height: 100%;
 }
-
 footer h3 {
   color: #343A40;
   font-weight: bold;
   text-align: center;
 }
-
 footer ul li {
   color: #6C757D;
   margin-bottom: 5px;
@@ -356,19 +360,15 @@ footer ul li {
   list-style: none;
   text-align: center;
 }
-
 footer ul li i {
-  color: #FFC107;
+  color: #421515;
 }
-
-/* Estilo para o mapa responsivo */
 .map-responsive {
   overflow: hidden;
   position: relative;
   height: 0;
   padding-bottom: 150px;
 }
-
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -376,8 +376,6 @@ footer ul li i {
   width: 100%;
   position: absolute;
 }
-
-/* Estilo para ícones de fonte */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -386,17 +384,12 @@ footer ul li i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Estilo para ícones de telefone e e-mail */
 .fa-envelope::before {
   content: "\f0e0";
 }
-
 .fa-phone::before {
   content: "\f095";
 }
-
-/* Estilo para ícone de mapa */
 .fa-map-marker-alt::before {
   content: "\f3c5";
 }
