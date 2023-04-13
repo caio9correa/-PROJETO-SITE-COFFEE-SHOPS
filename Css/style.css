@@ -32,14 +32,6 @@ p {
   color: #ad8383;
 }
 
-
-/* Fontes do google Fonts */
-@font-face {
-  font-family: "Rale";
-  src: url(../Fontes/Raleway/Raleway-Italic-VariableFont_wght.ttf);
-}
-
-
 /* Configurações do video como Background */
 video {
   position: fixed;
@@ -53,41 +45,38 @@ video {
   z-index: -10;
 }
 
-
 /* Configurações da Barra de navegação */
 .barradenav {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  opacity: 90%;
-}
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 90%;
+  }
 .barradenav a {
-  margin-top: 15px;
-  margin-left: 15px;
-  float: left;
-  display: block;
-  color: #ad8383;
-  text-align: center;
-  padding: 50px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-family: "Rale"
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    display: block;
+    color: #ad8383;
+    text-align: center;
+    padding: 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: "Rale"
 }
 .barradenav a:hover {
-  opacity: 75%;
-  color: rgb(56, 21, 21);
-  transform: scale(1.15);
-  border-bottom: solid rgb(58, 16, 16);
+    opacity: 75%;
+    color: rgb(56, 21, 21);
+    transform: scale(1.15);
+    border-bottom: solid rgb(58, 16, 16);
 }
-
 
 /* Configurações da Logo */
 #Logo{
-  float: left;
-  padding-left: 20px;
-}
-
+    float: left;
+    padding-left: 20px;
+  }
 
 /* configurações das sessões da página inicial*/
 /* Estilos da seção de apresentação*/
@@ -113,30 +102,6 @@ video {
   opacity: 80%;
   padding: 20px;
   text-align: center;
-}
-
-/* Estilos dos depoimentos */
-.depoimentos {
-  padding: 20px;
-  text-align: center;
-}
-.depoimentos h2 {
-  color: #fff;
-  font-size: 2em;
-}
-.depoimento {
-  margin-bottom: 20px;
-}
-.depoimento p {
-  font-size: 18px;
-  font-style: italic;
-  margin: 0;
-  padding-right: 0;
-  width: 100%;
-}
-.depoimento span {
-  font-weight: bold;
-  color: #fff;
 }
 
 /* Estilos da seção de Galeria */
@@ -189,6 +154,30 @@ video {
   }
 }
 
+/* Estilos dos depoimentos */
+.depoimentos {
+  padding: 20px;
+  text-align: center;
+}
+.depoimentos h2 {
+  color: #fff;
+  font-size: 2em;
+}
+.depoimento {
+  margin-bottom: 20px;
+}
+.depoimento p {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding-right: 0;
+  width: 100%;
+}
+.depoimento span {
+  font-weight: bold;
+  color: #fff;
+}
+
 /* Configurações do conteúdo da página Sobre nós */
 .sobre {
   height: 100%;
@@ -221,11 +210,9 @@ video {
   border-radius: 5px;
   text-align: center;
 }
-
 .cardapio h1 {
   color: #fff;
 }
-
 .produto {
   display: inline-block;
   margin: 20px;
@@ -237,11 +224,9 @@ video {
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .produto:hover {
   transform: scale(1.05);
 }
-
 .produto img {
   padding-left: 10px;
   max-width: 100%;
@@ -255,11 +240,9 @@ video {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-
 .produto h3 {
   color: #fff;
 }
-
 .produto p {
   width: 90%;
   text-align: center;
@@ -282,7 +265,6 @@ video {
   color: #fff;
 }
 
-
 /* configurações da página contatos e do formulário */
 .contatos-container {
   display: flex;
@@ -291,7 +273,6 @@ video {
   align-items: center;
   margin-top: 50px;
 }
-
 .info-contatos, .formulario-contatos {
   width: 450px;
   margin: 25px;
@@ -301,19 +282,16 @@ video {
   background-color: #000000;
   opacity: 95%;
 }
-
 .info-contatos h2, .formulario-contatos h2 {
   margin-top: 0;
   text-align: center;
   color: white;
 }
-
 .info-contatos p {
   width: 100%;
   text-align: center;
   padding: 2px;
 }
-
 .formulario-contatos label {
   display: block;
   margin-bottom: 5px;
@@ -321,25 +299,21 @@ video {
   text-align: center;
   padding-top: 5px;
 }
-
 .formulario-contatos input, .formulario-contatos textarea {
   width: 100%;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
 }
-
 .formulario-contatos button {
   background-color: #2b2828;
   color: #ffffff;
   padding: 10px;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 150px;
   margin-left: 150px;
 }
-
 
 /* Configurações do footer */
 footer {
@@ -363,34 +337,27 @@ footer ul li {
 footer ul li i {
   color: #421515;
 }
-.map-responsive {
+.mapa{
   overflow: hidden;
   position: relative;
   height: 0;
   padding-bottom: 150px;
 }
-.map-responsive iframe {
+.mapa iframe {
   left: 0;
   top: 0;
   height: 200px;
   width: 100%;
   position: absolute;
 }
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-envelope::before {
+
+.email-rodape::before {
   content: "\f0e0";
 }
-.fa-phone::before {
+.telefone-rodape::before {
   content: "\f095";
 }
-.fa-map-marker-alt::before {
+.endereco-rodape::before {
   content: "\f3c5";
 }
 

@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
-  <head>
+<head>
+  
+  <title>Coffee Shops da Tia Rosa</title> <!-- Tituto da página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Imagens/Logo1.png"image/x-icon">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/normalize.css">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shops da Tia Rosa</title>
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/normalize.css">
-    <link rel="shortcut icon" href="Imagens/Logo1.png"image/x-icon">
 
-    <div id="video">
-      <video autoplay loop muted>
-          <source src="Video/Backgound 5.mp4">
-      </video>
-    </div>
+</head>
 
-  </head>
-
-  <body>
-
-<!-- Barra de navegação -->
+<body>
+  <!--Background Video-->
+  <div id="video">
+    <video autoplay loop muted>
+            <source src="Video/Backgound 5.mp4">
+    </video>
+  </div>
+  
+  <header>
+  <!--Logo e Barra de navegação-->
     <div class="barradenav">
+      
       <div id="Logo">
-        <img src="Imagens/Logo1.png"">
+        <img src="Imagens/Logo1.png">
       </div>
 
       <a href="index.html"><strong>HOME</strong></a>
@@ -32,9 +34,10 @@
       <a href="contatos.html"><strong>CONTATOS</strong></a>
 
     </div>
+  </header>
 
-<!-- Conteúdo -->
-
+  <!-- Conteúdo Sobre nós -->
+  <main>
     <div class="sobre">
       <h1>Coffee Shops da Tia Rosa</h1>
       <br>
@@ -49,22 +52,27 @@
         <img src="Imagens/Loja1.jpg" alt="Foto da loja de café">
         <div class="titulo">Loja de Café</div>
       </div>
+      
       <div class="foto">
         <img src="Imagens/Loja2.jpg" alt="Foto do interior da loja">
         <div class="titulo">Interior da loja</div>
       </div>
+
       <div class="foto">
         <img src="Imagens/Loja3.jpg" alt="Foto de um café na loja">
         <div class="titulo">Café da loja</div>
       </div>
+
       <div class="foto">
         <img src="Imagens/Loja4.jpg" alt="Foto dos funcionários da loja">
         <div class="titulo">Funcionários da loja</div>
       </div>
+
       <div class="foto">
         <img src="Imagens/Loja5.jpg" alt="Foto dos funcionários da loja">
         <div class="titulo">Funcionários da loja</div>
       </div>
+
       <div class="foto">
         <img src="Imagens/Loja6.jpg" alt="Foto dos funcionários da loja">
         <div class="titulo">Funcionários da loja</div>
@@ -72,28 +80,33 @@
 
     </section>
 
-    <footer>
+  </main>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Contato</h3>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-envelope"></i> E-mail: contato@lojadeexemplo.com.br</li>
-              <li><i class="fas fa-phone"></i> Telefone: (11) 5555-5555</li>
-              <li><i class="fas fa-map-marker-alt"></i> Endereço: Rua Exemplo, 123, Bairro Exemplo, São Paulo - SP</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3>Localização</h3>
-            <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7198521812365!2d-46.675645384508714!3d-23.589139784669712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583e2a49f085%3A0xaca0a360576f8f81!2sRua%20Exemplo%2C%20123%20-%20Bairro%20Exemplo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2000000-000!5e0!3m2!1spt-BR!2sbr!4v1649180660055!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-          </div>
-        </div>
+  <!--Rodapé-->
+  <footer>
+
+    <div class="container">
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="email-rodape"></i> E-mail: contato@lojadeexemplo.com.br<li>
+          <li><i class="telefone-rodape"></i> Telefone: (11) 5555-5555</li>
+          <li><i class="endereco-rodape"></i> Endereço: Rua Exemplo, 123, Bairro Exemplo, São Paulo - SP</li>
+        </ul>
       </div>
-    
-    </footer>
-    
+
+        <div>
+          <h3>Localização</h3>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1108.7753388784804!2d-47.92012006906784!3d-15.817533971807745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1680830869582!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>  
+  
   </body>
 </html>

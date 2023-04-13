@@ -2,28 +2,30 @@
 <html>
 
 <head>
+  
+  <title>Coffee Shops da Tia Rosa</title> <!-- Tituto da página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Imagens/Logo1.png"image/x-icon">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/normalize.css">
 
-    <title>Coffee Shops da Tia Rosa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Imagens/Logo1.png"image/x-icon">
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/normalize.css">
-    <div id="video">
-      <video autoplay loop muted>
-        <source src="Video/Backgound 5.mp4">
-      </video>
-    </div>
 
 </head>
 
 <body>
-
+<!--Background Video-->
+  <div id="video">
+    <video autoplay loop muted>
+            <source src="Video/Backgound 5.mp4">
+    </video>
+  </div>
+  
   <header>
-
+<!--Logo e Barra de navegação-->
     <div class="barradenav">
-
+      
       <div id="Logo">
-        <img src="Imagens/Logo1.png"">
+        <img src="Imagens/Logo1.png">
       </div>
 
       <a href="index.html"><strong>HOME</strong></a>
@@ -32,9 +34,9 @@
       <a href="contatos.html"><strong>CONTATOS</strong></a>
 
     </div>
-
   </header>
-
+  
+  <!--Conteúdo da página de contatos-->
   <main>
     <div class="contatos-container">
 
@@ -63,28 +65,33 @@
     </div>
 
   </main>
-  
+
+  <!--Rodapé-->
   <footer>
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Contato</h3>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-envelope"></i> E-mail: contato@lojadeexemplo.com.br</li>
-            <li><i class="fas fa-phone"></i> Telefone: (11) 5555-5555</li>
-            <li><i class="fas fa-map-marker-alt"></i> Endereço: Rua Exemplo, 123, Bairro Exemplo, São Paulo - SP</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="email-rodape"></i> E-mail: contato@lojadeexemplo.com.br<li>
+          <li><i class="telefone-rodape"></i> Telefone: (11) 5555-5555</li>
+          <li><i class="endereco-rodape"></i> Endereço: Rua Exemplo, 123, Bairro Exemplo, São Paulo - SP</li>
+        </ul>
+      </div>
+
+        <div>
           <h3>Localização</h3>
-          <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1108.7753388784804!2d-47.92012006906784!3d-15.817533971807745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1680830869582!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1108.7753388784804!2d-47.92012006906784!3d-15.817533971807745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1680830869582!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+
         </div>
+
       </div>
     </div>
-  </footer>
 
-  </body>
+  </footer>  
   
+  </body>
 </html>
